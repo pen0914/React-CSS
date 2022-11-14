@@ -1,8 +1,26 @@
 export const InlineStyle = () => {
+  const containStyle = {
+    border: "solid 2px #392eff",
+    borderRadius: "20px",
+    padding: "8px",
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center"
+  };
+  const titleStyle = {
+    margin: 0,
+    color: "#3d84a8"
+  };
+  const buttonStyle = {
+    backgroundColor: "#abedd8",
+    border: "none",
+    padding: "8px",
+    borderRadius: "8px"
+  };
   return (
-    <div>
-      <p>- Inline Style -</p>
-      <button>FIGHT!</button>
+    <div style={containStyle}>
+      <p style={titleStyle}>- Inline Style -</p>
+      <button style={buttonStyle}>FIGHT!</button>
     </div>
   );
 };
